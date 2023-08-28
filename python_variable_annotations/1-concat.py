@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 concatenate two string
+
 """
 
 
