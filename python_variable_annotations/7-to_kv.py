@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
-Complex types - string and int/float to tuple
+Complex types - mixed list
 """
+from typing import Union, Tuple
 
-from typing import List, Union, Tuple
 
-
-def to_kv(k: str, v: List[Union[float, int]]) -> Tuple[float, int]:
-    "return tuple"
-    return k and v ** 2
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
+    """
+    return int or tuple(int, float)
+    """
+    return k, float(v ** 2)
