@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 """
-
-
+Complex types - list of floats
 """
 from typing import List
 
 
-def sum_list(input_list: list[float]) -> float:
-    ""
-    total = sum(input_list)
-    return float(total)
+def sum_list(input_list: List[float]) -> float:
+    "return sum"
+    return sum(input_list)
