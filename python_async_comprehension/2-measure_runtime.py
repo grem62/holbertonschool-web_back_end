@@ -5,14 +5,13 @@ Run time for four parallel comprehensions
 
 import asyncio
 import random
-from typing import List
 import time
 
 
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
-async def measure_runtime() -> List:
+async def measure_runtime() -> float:
     "return 4 parrallel coroutine"
 
     first_time = time.time()
