@@ -3,6 +3,7 @@ export default function taskBlock(trueOrFalse) {
   const task2 = true;
 
   if (trueOrFalse) {
+    //Block Scope
     const task = true; // Utilisation de 'let' pour éviter la réaffectation
     const task2 = false; // Utilisation de 'let' pour éviter la réaffectation
   }
