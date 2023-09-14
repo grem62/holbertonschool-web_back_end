@@ -1,3 +1,6 @@
 export default function createEmployeesObject(departmentName, employees) {
-  return `{ ${departmentName}: [ '${employees.join("', '")}' ] }`;
+  const employe = {
+    [departmentName]: employees,
+  };
+  return employe;
 }
