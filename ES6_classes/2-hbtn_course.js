@@ -1,5 +1,6 @@
 export default class HolbertonCourse {
     constructor(name, length, students) {
+      // Vérification du type des attributs
       if (typeof name !== 'string') {
         throw new TypeError('Name must be a string');
       }
@@ -15,10 +16,12 @@ export default class HolbertonCourse {
       this._students = students;
     }
   
+    // Getter pour l'attribut 'name'
     get name() {
       return this._name;
     }
   
+    // Setter pour l'attribut 'name'
     set name(newName) {
       if (typeof newName === 'string') {
         this._name = newName;
@@ -27,10 +30,12 @@ export default class HolbertonCourse {
       }
     }
   
+    // Getter pour l'attribut 'length'
     get length() {
       return this._length;
     }
   
+    // Setter pour l'attribut 'length'
     set length(newLength) {
       if (typeof newLength === 'number') {
         this._length = newLength;
@@ -39,10 +44,12 @@ export default class HolbertonCourse {
       }
     }
   
+    // Getter pour l'attribut 'students'
     get students() {
       return this._students;
     }
   
+    // Setter pour l'attribut 'students'
     set students(newStudents) {
       if (Array.isArray(newStudents) && newStudents.every((student) => typeof student === 'string')) {
         this._students = newStudents;
