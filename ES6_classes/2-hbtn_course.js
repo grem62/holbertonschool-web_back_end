@@ -49,7 +49,7 @@ export default class HolbertonCourse {
       return this._students;
     }
   
-    // Setter pour l'attribut 'students'
+    // Setter pour l'attribut 'student'
     set students(newStudents) {
       if (Array.isArray(newStudents) && newStudents.every((student) => typeof student === 'string')) {
         this._students = newStudents;
