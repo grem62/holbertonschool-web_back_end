@@ -1,4 +1,4 @@
-export default function getStudentsByLocation(filterarray) {
-  const filter = filterarray.filter((item) => item.location === 'San Francisco');
+export default function getStudentsByLocation(filterarray, city) {
+  const filter = filterarray.filter((item) => item.location === city);
   return filter;
 }
